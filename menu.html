@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Main Menu</h1>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <section class="meal-selector">
+    <label for="meal-type">Select Meal</label>
+    <select id="meal-type">
+      <option value="appetizers">Appetizers</option>
+      <option value="lunch">Lunch</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="dessert">Dessert</option>
+    </select>
+  </section>
+
+  <section class="filter">
+    <span data-protein="chicken">Chicken</span>
+    <span data-protein="beef">Beef</span>
+    <span data-protein="pork">Pork</span>
+    <span data-protein="vegetarian">Vegetarian</span>
+  </section>
+
+  <section class="menu">
+    <div class="menu-item">
+      <img src="taquitos.jpg" alt="Chicken Fried Taquitos">
+      <div class="details">
+        <h2>Chicken Fried Taquitos</h2>
+        <p class="price">$10.20</p>
+        <p class="description">One Dozen</p>
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <img src="wings.jpg" alt="Spicy Chicken Wings">
+      <div class="details">
+        <h2>Spicy Chicken Wings</h2>
+        <p class="price">$12.50</p>
+        <p class="description">8 Pieces</p>
+      </div>
+    </div>
+  </section>
+  <script src="activity.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #8b5e34;
+    color: white;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .meal-selector {
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  .meal-selector label {
+    font-weight: bold;
+  }
+  
+  #meal-type {
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  .filter {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .filter span {
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    padding: 1rem;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .details h2 {
+    margin: 0;
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .description {
+    color: #666;
+  }
+  
