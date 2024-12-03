@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order History</title>
+    <link rel="stylesheet" href="viewdetail.css">
+</head>
+<body>
+    <div class="order-container">
+        <!-- Header -->
+        <div class="header">
+            <button class="back-button" onclick="goBack()">←</button>
+            <div class="header-content">
+                <h1>My Order (4)</h1>
+            </div>
+            <div class="menu-bar">
+                <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
+            </div>
+        </div>
+
+        <!-- Order Items -->
+        <div class="order-item">
+            <div class="item-details">
+                <span>21 Chicken Fried Taquitos</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 59.85</span>
+        </div>
+        <div class="order-item">
+            <div class="item-details">
+                <span>2 Meat Balls</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 5.70</span>
+        </div>
+        <div class="order-item">
+            <div class="item-details">
+                <span>10 Chicken Puffs</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 28.50</span>
+        </div>
+        <div class="order-item">
+            <div class="item-details">
+                <span>14 Lasagna</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button>Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 52.30</span>
+        </div>
+
+        <!-- Add Order Notes Section -->
+        <div class="order-notes">
+            <p class="order-notes-text">Add Order Notes:</p>
+            <textarea placeholder="e.g., Please call upon arrival"></textarea>
+        </div>
+
+        <!-- Subtotal and Checkout -->
+        <div class="subtotal">
+                <span class="subtotal-text">Subtotal:</span>
+                <span class="subtotal-price">BZD 148.35</span>
+        </div>
+        <button class="checkout">Checkout</button>
+    </div>
+
+    <script>
+        // This function will take you to history.html when called
+        function goBack() {
+            window.location.href = 'history.html'; // Navigate to history page
+        }
+    
+        // The hamburger menu toggle function (for reference, if needed)
+        function goToMainMenu() {
+            window.location.href = 'mainmenu.html'; // Navigate to the main menu page
+        }
+    </script> 
+</body>
+</html>

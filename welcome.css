@@ -1,0 +1,23 @@
+body {
+    background-color: #6D4426;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#welcome-page {
+    opacity: 1;
+    transition: opacity 3s ease-in-out; /* Adjust transition duration and easing as needed */
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 900px;
+    height: auto;
+}

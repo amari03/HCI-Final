@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Orders</title>
+  <link rel="stylesheet" href="history.css">
+</head>
+<body>
+  <header>
+    <h1>Past Orders</h1>
+    <div class="menu-bar">
+      <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="order-container">
+    <div class="order-item">
+      <h2>June 26, 2024</h2>
+      <ul>
+        <li>32 Chicken Puffs</li>
+        <li>2 Meat Balls</li>
+        <li>10 Chicken Fried Taquitos</li>
+        <li>etc ...</li>
+      </ul>
+      <a href="viewdetail1.html" class="view-details">View Details</a>
+      <div class="order-total">$148.35</div>
+    </div>
+  
+    <div class="order-item">
+      <h2>August 15, 2024</h2>
+      <ul>
+        <li>5 Chicken Fried Taquitos</li>
+        <li>4 Pork Tacos</li>
+        <li>22 Beef Burgers</li>
+      </ul>
+      <a href="viewdetail2.html" class="view-details">View Details</a>
+      <div class="order-total">$421.50</div>
+    </div>
+  
+    <div class="order-item">
+      <h2>September 15, 2024</h2>
+      <ul>
+        <li>8 Chicken Puffs</li>
+        <li>6 Chicken Tacos</li>
+        <li>12 Pork Burgers</li>
+      </ul>
+      <a href="viewdetail3.html" class="view-details">View Details</a>
+      <div class="order-total">$578.90</div>
+    </div>
+  </div>  
+
+  <script>
+    function goToMainMenu() {
+      window.location.href = 'mainmenu.html';
+    }
+  </script>
+</body>
+</html>

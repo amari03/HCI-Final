@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Inter, sans-serif;
+    background-color: #F8F4F1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top to avoid excess white space */
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Order Container */
+.order-container {
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    max-width: 400px; /* Keep container within a maximum size */
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #6D4426;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+
+.header .header-content {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.back-button, .menu-button {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Order Items */
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item .item-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+.order-item .price {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5D4037;
+}
+
+.order-item .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.order-item button {
+    padding: 8px 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Order Notes */
+.order-notes {
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+/* Style for "Add Order Notes" text */
+.order-notes-text {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #524434;
+}
+
+.order-notes textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Subtotal */
+.subtotal {
+    margin-top: 20px;
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5D4037;
+}
+
+/* Checkout Button */
+.checkout {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    background-color: #6D4426;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box; /* Ensures it doesn’t overflow */
+}
+
+.subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.subtotal-text {
+    margin-right: 10px; /* Adds space between "Subtotal:" and the price */
+}
+
+.subtotal-price {
+    font-weight: bold; /* Optional: makes the price bold */
+}

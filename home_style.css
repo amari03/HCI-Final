@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cardo', serif;
+    background-color: rgba(249, 220, 199, 0.51); /* Lighter background with opacity */
+    text-align: center; /* Center everything */
+}
+
+/* Header */
+header {
+    background-color: #6D4426; /* Brown header background */
+    padding: 60px 0; /* Less padding for header */
+    border-bottom-left-radius: 50px; /* Rounded bottom */
+    border-bottom-right-radius: 50px;
+    position: relative;
+}
+
+.menu-bar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem; /* Large menu icon */
+    color: white;
+    cursor: pointer;
+}
+
+.header-content {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header-icon {
+    width: 400px; /* Slightly smaller icon */
+    margin: 0 auto 30px; /* Centered with more space below */
+}
+
+.logo-title {
+    font-size: 2.4rem; /* Slightly smaller logo title */
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo-subtitle {
+    font-style: italic;
+    font-size: 1.7rem; /* Slightly smaller subtitle */
+    margin: 0;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
+}
+
+.tagline {
+    font-size: 5rem; /* Set a larger base size for tagline */
+    font-style: italic;
+    color: #a97149; /* Match brown color */
+    margin: 30px 0;
+    line-height: 1.6; /* More space between lines */
+}
+
+.decor-icon {
+    width: 120px; /* Increase decorative icon size */
+    margin: 30px auto;
+}
+
+.cta-button {
+    background-color: transparent;
+    color: #6D4426;
+    border: 2px solid #6D4426;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 40px; /* Larger padding */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6D4426; /* Brown background */
+    color: white; /* White text */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .header-icon {
+        width: 130px; /* Slightly smaller icon on tablets */
+    }
+
+    .logo-title {
+        font-size: 2.2rem; /* Reduce logo size for medium screens */
+    }
+
+    .logo-subtitle {
+        font-size: 1.5rem; /* Reduce subtitle for medium screens */
+    }
+
+    .tagline {
+        font-size: 2.2rem; /* Keep the tagline larger on medium screens */
+    }
+
+    .cta-button {
+        font-size: 1.3rem;
+        padding: 12px 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Mobile Specific Styles */
+    header {
+        padding: 40px 0; /* Adjust padding for mobile */
+    }
+
+    .menu-bar {
+        top: 15px;
+        right: 15px;
+    }
+
+    .menu-toggle {
+        font-size: 1.6rem; /* Adjust menu icon size for smaller screens */
+    }
+
+    .header-icon {
+        width: 270px; /* Slightly smaller icon */
+        display: block; /* Center the image horizontally */
+        margin: 0 auto; /* Automatically center the image horizontally */
+        margin-top: 30px; /* Adjust this value to move the image down */
+    }
+    
+    .logo-title {
+        font-size: 2rem; /* Adjust logo size for mobile */
+    }
+
+    .logo-subtitle {
+        font-size: 1.4rem; /* Adjust subtitle for mobile */
+    }
+
+    .tagline {
+        font-size: 1.8rem; /* Adjust size to remain larger */
+    }
+
+    .decor-icon {
+        width: 80px; /* Smaller decorative icon */
+        display: block; /* Make the image a block element */
+        margin: 30px auto; /* Center the image horizontally and give it some space above and below */
+    }    
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra Small Screen Styles */
+    .menu-toggle {
+        font-size: 1.4rem; /* Smaller menu icon for very small screens */
+    }
+
+    .logo-title {
+        font-size: 1.6rem; /* Reduce logo size further */
+    }
+
+    .logo-subtitle {
+        font-size: 1.2rem; /* Reduce subtitle size */
+    }
+
+    .tagline {
+        font-size: 1.4rem; /* Slightly reduced tagline font for extra small screens */
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
