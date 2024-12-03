@@ -1,80 +1,48 @@
-
-const menuItems = [
-    {
-      name: "Chicken Fried Taquitos",
-      price: "$10.20",
-      description: "One Dozen",
-      image: "taquitos.jpg",
-      meal: "appetizers",
-      protein: "chicken",
-    },
-    {
-      name: "Spicy Chicken Wings",
-      price: "$12.50",
-      description: "8 Pieces",
-      image: "wings.jpg",
-      meal: "appetizers",
-      protein: "chicken",
-    },
-    {
-      name: "Beef Tacos",
-      price: "$11.00",
-      description: "3 Pieces",
-      image: "beef-tacos.jpg",
-      meal: "appetizers",
-      protein: "beef",
-    },
-    {
-      name: "Vegetarian Salad",
-      price: "$9.50",
-      description: "Fresh Greens",
-      image: "salad.jpg",
-      meal: "lunch",
-      protein: "vegetarian",
-    },
-    // Add more mock items here
-  ];
-
-  // DOM elements
-  const mealSelector = document.getElementById("meal-type");
+document.addEventListener("DOMContentLoaded", function () {
+  const mealTypeSelector = document.getElementById("meal-type");
+  const menuContainer = document.querySelector(".menu");
   const filterSpans = document.querySelectorAll(".filter span");
-  const menuSection = document.querySelector(".menu");
 
-  // Function to render menu items based on selected filters
-  function renderMenu(selectedMeal, selectedProtein) {
-    menuSection.innerHTML = ""; // Clear existing items
+  // Function to load and filter menu items
+  function loadMenu(selectedMealType, selectedProtein = "all") {
+    fetch("menu.json")
+      .then((response) => response.json())
+      .then((menuItems) => {
+        // Clear the current menu
+        menuContainer.innerHTML = "";
 
-    const filteredItems = menuItems.filter((item) => {
-      return (
-        (selectedMeal === "all" || item.meal === selectedMeal) &&
-        (selectedProtein === "all" || item.protein === selectedProtein)
-      );
-    });
+        // Filter items based on the selected meal type and protein
+        const filteredItems = menuItems.filter((item) => {
+          const mealMatch = item.mealType === selectedMealType;
+          const proteinMatch = selectedProtein === "all" || item.protein === selectedProtein;
+          return mealMatch && proteinMatch;
+        });
 
-    // Populate menu with filtered items
-    if (filteredItems.length > 0) {
-      filteredItems.forEach((item) => {
-        menuSection.innerHTML += `
-          <div class="menu-item">
+        // Render the filtered menu items
+        filteredItems.forEach((item) => {
+          const menuItem = document.createElement("div");
+          menuItem.classList.add("menu-item");
+
+          menuItem.innerHTML = `
             <img src="${item.image}" alt="${item.name}">
             <div class="details">
               <h2>${item.name}</h2>
               <p class="price">${item.price}</p>
               <p class="description">${item.description}</p>
             </div>
-          </div>
-        `;
-      });
-    } else {
-      menuSection.innerHTML = "<p>No items found for the selected filters.</p>";
-    }
+          `;
+
+          menuContainer.appendChild(menuItem);
+        });
+      })
+      .catch((error) => console.error("Error loading menu:", error));
   }
 
-  // Event listener for meal selector dropdown
-  mealSelector.addEventListener("change", (e) => {
+  // Event listener for meal type selection
+  mealTypeSelector.addEventListener("change", (e) => {
     const selectedMeal = e.target.value;
     const activeProtein = document.querySelector(".filter span.active")?.dataset.protein || "all";
-    renderMenu(selectedMeal, activeProtein);
+    loadMenu(selectedMeal, activeProtein);
   });
 
   // Event listeners for protein filter
@@ -83,11 +51,41 @@ const menuItems = [
       filterSpans.forEach((s) => s.classList.remove("active")); // Clear previous selection
       span.classList.add("active");
 
-      const selectedMeal = mealSelector.value;
+      const selectedMeal = mealTypeSelector.value;
       const selectedProtein = span.dataset.protein;
-      renderMenu(selectedMeal, selectedProtein);
+      loadMenu(selectedMeal, selectedProtein);
     });
   });
 
-  // Initial render
-  renderMenu("appetizers", "all");
+  // Load default menu on page load
+  loadMenu(mealTypeSelector.value);
+
+  // Quantity Control Logic
+  const decreaseBtn = document.getElementById("decrease");
+  const increaseBtn = document.getElementById("increase");
+  const quantityValue = document.getElementById("quantity-value");
+  const orderPrice = document.getElementById("order-price");
+
+  if (decreaseBtn && increaseBtn && quantityValue && orderPrice) {
+    let quantity = 1;
+    const basePrice = 20.40;
+
+    function updatePrice() {
+      orderPrice.textContent = (basePrice * quantity).toFixed(2);
+    }
+
+    decreaseBtn.addEventListener("click", () => {
+      if (quantity > 1) {
+        quantity--;
+        quantityValue.textContent = quantity;
+        updatePrice();
+      }
+    });
+
+    increaseBtn.addEventListener("click", () => {
+      quantity++;
+      quantityValue.textContent = quantity;
+      updatePrice();
+    });
+  }
+});
