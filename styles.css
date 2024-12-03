@@ -40,6 +40,9 @@ body {
     margin-top: 0.5rem;
     width: 100%;
     padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ccc;
   }
   
   .filter {
@@ -91,3 +94,45 @@ body {
     color: #666;
   }
   
+  .item-detail {
+    padding: 15px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .quantity {
+    margin-top: 10px;
+  }
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-controls button {
+    padding: 5px 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .add-order-btn {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #8B4513;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .add-order-btn:hover {
+    background-color: #5C3317;
+  }
