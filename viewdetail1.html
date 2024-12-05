@@ -18,57 +18,60 @@
                 <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
             </div>
         </div>
-        
+
         <!-- Order Items -->
         <div class="order-items-container">
             <div class="order-item">
                 <div class="item-details">
-                    <span>21 Chicken Fried Taquitos</span>
+                    <span class="item-name">21 Chicken Fried Taquitos</span>
                     <div class="actions">
-                        <button>Edit</button>
+                        <button class="edit-btn">Edit</button>
                         <button class="remove-btn">Remove</button>
                     </div>
                 </div>
                 <span class="price">BZD 59.85</span>
             </div>
+
             <div class="order-item">
                 <div class="item-details">
                     <span>2 Meat Balls</span>
                     <div class="actions">
-                        <button>Edit</button>
+                        <button class="edit-btn">Edit</button>
                         <button class="remove-btn">Remove</button>
                     </div>
                 </div>
                 <span class="price">BZD 5.70</span>
             </div>
+
             <div class="order-item">
                 <div class="item-details">
                     <span>10 Chicken Puffs</span>
                     <div class="actions">
-                        <button>Edit</button>
+                        <button class="edit-btn">Edit</button>
                         <button class="remove-btn">Remove</button>
                     </div>
                 </div>
                 <span class="price">BZD 28.50</span>
             </div>
+
             <div class="order-item">
                 <div class="item-details">
                     <span>14 Lasagna</span>
                     <div class="actions">
-                        <button>Edit</button>
+                        <button class="edit-btn">Edit</button>
                         <button class="remove-btn">Remove</button>
                     </div>
                 </div>
                 <span class="price">BZD 52.30</span>
             </div>
         </div>
-        
+
         <!-- Add Order Notes Section -->
         <div class="order-notes">
             <p class="order-notes-text">Add Order Notes:</p>
             <textarea placeholder="e.g., Please call upon arrival"></textarea>
         </div>
-        
+
         <!-- Subtotal and Checkout -->
         <div class="subtotal">
             <span class="subtotal-text">Subtotal:</span>
@@ -76,20 +79,18 @@
         </div>
         <div class="actions-container">
             <button class="undo-btn" style="display: none;">Undo</button>
-            <button class="checkout" onclick="window.location.href='Order-Successful.html'">Checkout</button>
+            <button class="checkout">Checkout</button>
         </div>
     </div>
-    
+
     <script src="order-management.js"></script>
     <script>
-        // This function will take you to history.html when called
         function goBack() {
-            window.location.href = 'history.html'; // Navigate to history page
+            window.location.href = 'history.html';
         }
-        
-        // The hamburger menu toggle function (for reference, if needed)
+
         function goToMainMenu() {
-            window.location.href = 'mainmenu.html'; // Navigate to the main menu page
+            window.location.href = 'mainmenu.html';
         }
     </script>
 </body>
