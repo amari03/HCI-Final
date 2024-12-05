@@ -19,46 +19,48 @@
             </div>
         </div>
         
-        <!-- Order Items --> 
-        <div class="order-item">
-            <div class="item-details">
-                <span>3 Chicken Fried Taquitos</span>
-                <div class="actions">
-                    <button onclick="window.location.href='item-details.html'">Edit</button>
-                    <button class="remove-btn">Remove</button>
+        <!-- Order Items -->
+        <div class="order-items-container">
+            <div class="order-item">
+                <div class="item-details">
+                    <span>21 Chicken Fried Taquitos</span>
+                    <div class="actions">
+                        <button>Edit</button>
+                        <button class="remove-btn">Remove</button>
+                    </div>
                 </div>
+                <span class="price">BZD 59.85</span>
             </div>
-            <span class="price">BZD 55.85</span>
-        </div>
-        <div class="order-item">
-            <div class="item-details">
-                <span>2 Meat Balls</span>
-                <div class="actions">
-                    <button onclick="window.location.href='item-details.html'">Edit</button>
-                    <button class="remove-btn">Remove</button>
+            <div class="order-item">
+                <div class="item-details">
+                    <span>2 Meat Balls</span>
+                    <div class="actions">
+                        <button>Edit</button>
+                        <button class="remove-btn">Remove</button>
+                    </div>
                 </div>
+                <span class="price">BZD 5.70</span>
             </div>
-            <span class="price">BZD 15.70</span>
-        </div>
-        <div class="order-item">
-            <div class="item-details">
-                <span>10 Chicken Puffs</span>
-                <div class="actions">
-                    <button onclick="window.location.href='item-details.html'">Edit</button>
-                    <button class="remove-btn">Remove</button>
+            <div class="order-item">
+                <div class="item-details">
+                    <span>10 Chicken Puffs</span>
+                    <div class="actions">
+                        <button>Edit</button>
+                        <button class="remove-btn">Remove</button>
+                    </div>
                 </div>
+                <span class="price">BZD 28.50</span>
             </div>
-            <span class="price">BZD 28.50</span>
-        </div>
-        <div class="order-item">
-            <div class="item-details">
-                <span>4 Lasagna</span>
-                <div class="actions">
-                    <button onclick="window.location.href='item-details.html'">Edit</button>
-                    <button class="remove-btn">Remove</button>
+            <div class="order-item">
+                <div class="item-details">
+                    <span>14 Lasagna</span>
+                    <div class="actions">
+                        <button>Edit</button>
+                        <button class="remove-btn">Remove</button>
+                    </div>
                 </div>
+                <span class="price">BZD 52.30</span>
             </div>
-            <span class="price">BZD 52.30</span>
         </div>
         
         <!-- Add Order Notes Section -->
@@ -73,21 +75,11 @@
             <span class="subtotal-price">BZD 148.35</span>
         </div>
         <div class="actions-container">
-            <button class="undo-btn">Undo</button>
-            <button class="checkout" onclick="window.location.href='Order-Successful.html'">Checkout</button>
+            <button class="undo-btn" style="display: none;">Undo</button>
+            <button class="checkout">Checkout</button>
         </div>
     </div>
-    <!-- Item Details Section -->
-    <div class="item-details-container">
-        <h1 class="item-name"></h1> <!-- Item Name -->
-        <img class="item-image" src="" alt="Item Image"> <!-- Item Image -->
-        <p class="item-description"></p> <!-- Item Description -->
-        <p class="item-price"></p> <!-- Item Price -->
-
-        <!-- Edit and Add to Cart Buttons -->
-        <button class="edit-btn" onclick="editItem()">Edit Item</button>
-        <button class="add-to-cart-btn">Add to Cart</button>
-    </div>
+    
     <script src="order-management.js"></script>
     <script>
         // This function will take you to history.html when called
