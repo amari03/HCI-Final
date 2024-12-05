@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p>BZD ${order.totalPrice}</p>
                 </div>
                 <div class="order-actions">
-                    <button class="edit-btn" onclick="window.location.href='item-details.html'">Edit</button>
+                    <button class="edit-btn">Edit</button>
                     <button class="remove-btn">Remove</button>
                 </div>
             `;
