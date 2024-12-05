@@ -3,7 +3,7 @@
       "name": "Chicken Fried Taquitos",
       "price": 10.20,
       "description": "One Dozen",
-      "image": "/images/chicken_tacos.jpeg",
+      "image": "images/chicken_tacos.jpeg",
       "protein": "chicken",
       "mealType": "appetizers"
     },
