@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="item-name"></h1>
+    <button onclick="window.history.back()">← Back</button>
+  </header>
+  <section class="item-details">
+    <img id="item-image" alt="Item Image">
+    <p id="item-description"></p>
+    <p id="item-price"></p>
+  </section>
+  <section class="order">
+    <label for="special-requests">Special Requests:</label>
+    <input type="text" id="special-requests" placeholder="e.g., Please call upon arrival">
+    <br>
+    <label for="quantity">Quantity:</label>
+    <br>
+    <input type="number" id="quantity" min="1" value="1">
+    <br><button id="add-to-order" class="add-order-btn">Add Order BZD 0.00</button>
+    <br><button id="add-to-order" class="add-order-btn" onclick="window.location.href='order.html'">View Orders</button>
+  </section>
+  <script src="item-details.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order History</title>
+    <link rel="stylesheet" href="viewdetail.css">
+</head>
+<body>
+    <div class="order-container">
+        <!-- Header -->
+        <div class="header">
+            <button class="back-button" onclick="goBack()">←</button>
+            <div class="header-content">
+                <h1>My Order (3)</h1>
+            </div>
+            <div class="menu-bar">
+                <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
+            </div>
+        </div>
+        
+        <!-- Order Items --> 
+        <div class="order-item">
+            <div class="item-details">
+                <span>5 Chicken Fried Taquitos</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 159.85</span>
+        </div>
+        <div class="order-item">
+            <div class="item-details">
+                <span>6 Mini Sausage Rolls</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 98.70</span>
+        </div>
+        <div class="order-item">
+            <div class="item-details">
+                <span>22 Finger Sandwiches</span>
+                <div class="actions">
+                    <button>Edit</button>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <span class="price">BZD 228.50</span>
+        </div>
+        
+        <!-- Add Order Notes Section -->
+        <div class="order-notes">
+            <p class="order-notes-text">Add Order Notes:</p>
+            <textarea placeholder="e.g., Please call upon arrival"></textarea>
+        </div>
+        
+        <!-- Subtotal and Checkout -->
+        <div class="subtotal">
+            <span class="subtotal-text">Subtotal:</span>
+            <span class="subtotal-price">BZD 421.50</span>
+        </div>
+        <div class="actions-container">
+            <button class="undo-btn">Undo</button>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+    
+    <script src="order-management.js"></script>
+    <script>
+        // This function will take you to history.html when called
+        function goBack() {
+            window.location.href = 'history.html'; // Navigate to history page
+        }
+        
+        // The hamburger menu toggle function (for reference, if needed)
+        function goToMainMenu() {
+            window.location.href = 'mainmenu.html'; // Navigate to the main menu page
+        }
+    </script>
+</body>
+</html>

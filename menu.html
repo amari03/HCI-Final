@@ -7,49 +7,39 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Main Menu -->
-  <div id="main-menu">
-    <header>
-      <h1>Main Menu</h1>
-      <button class="menu-toggle">☰</button>
-    </header>
-
-    <section class="meal-selector">
-      <label for="meal-type">Select Meal</label>
-      <select id="meal-type">
-        <option value="all">All</option>
-        <option value="appetizers">Appetizers</option>
-        <option value="lunch">Lunch</option>
-        <option value="breakfast">Breakfast</option>
-        <option value="dessert">Dessert</option>
-      </select>
-    </section>
-
-    <section class="filter">
-      <span data-protein="all" class="active">All</span>
-      <span data-protein="chicken">Chicken</span>
-      <span data-protein="beef">Beef</span>
-      <span data-protein="pork">Pork</span>
-      <span data-protein="vegetarian">Vegetarian</span>
-    </section>
-
-    <section class="menu">
-      <!-- Menu items will be dynamically inserted here -->
-    </section>
+  <header>
+    <h1>Main Menu</h1>
+    <div class="menu-bar">
+      <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
   </div>
+  </header>
 
-  <!-- Details Page -->
-  <div id="details-page" style="display: none;">
-    <header>
-      <button id="back-button">← Back</button>
-      <h1 id="details-title"></h1>
-    </header>
-    <img id="details-image" src="" alt="">
-    <p id="details-description"></p>
-    <p id="details-price"></p>
-    <button id="add-to-cart">Add to Cart</button>
-  </div>
+  <section class="meal-selector">
+    <label for="meal-type">Select Meal</label>
+    <select id="meal-type">
+      <option value="appetizers">Appetizers</option>
+      <option value="lunch">Lunch</option>
+      <option value="breakfast">Breakfast</option>
+      <option value="dessert">Dessert</option>
+    </select>
+  </section>
 
-  <script src="script.js"></script>
+  <section class="filter">
+    <span data-protein="chicken">Chicken</span>
+    <span data-protein="beef">Beef</span>
+    <span data-protein="pork">Pork</span>
+    <span data-protein="vegetarian">Vegetarian</span>
+  </section>
+
+  <section class="menu">
+    <!-- Menu items will be loaded here dynamically -->
+  </section>
+  <script src="activity.js"></script>
+  <script>
+    // The hamburger menu toggle function (for reference, if needed)
+    function goToMainMenu() {
+            window.location.href = 'mainmenu.html'; // Navigate to the main menu page
+        }
+  </script>
 </body>
 </html>

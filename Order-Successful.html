@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .success-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .success-container h1 {
+            color: #3f4a42;
+        }
+        .success-container p {
+            color: #6c757d;
+        }
+        .success-container button {
+            background-color: #825805;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .success-container button:hover {
+            background-color: #020201;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Order Successful!</h1>
+        <p>Thank you for your order. Your items will be processed shortly.</p>
+        <button id="menu-btn">Go to Menu</button>
+    </div>
+
+    <script>
+        document.getElementById('menu-btn').addEventListener('click', () => {
+            // Redirect to the menu page
+            window.location.href = 'menu.html'; // Replace with your menu page URL
+        });
+    </script>
+</body>
+</html>

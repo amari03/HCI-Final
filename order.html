@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Order</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Order <span id="order-count">(0)</span></h1>
+    <button onclick="window.location.href='menu.html'">← Back</button>
+  </header>
+  <main>
+    <div id="orders-container">
+      <!-- Orders will be dynamically added here -->
+    </div>
+
+    <div class="order-notes">
+      <label for="order-notes">Add Order Notes:</label>
+      <textarea id="order-notes" placeholder="e.g., Please call upon arrival"></textarea>
+    </div>
+
+    <div class="subtotal">
+      <span>Subtotal:</span>
+      <span id="subtotal">BZD 0.00</span>
+    </div>
+
+    <button id="checkout" onclick="window.location.href='Order-Successful.html'">Checkout</button>
+  </main>
+  <script src="orders.js"></script>
+
+
+</body>
+</html>

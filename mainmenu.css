@@ -1,0 +1,43 @@
+/* General Styles */
+body {
+    background-color: #6D4426;
+    font-family: 'Cardo Bold', Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Menu Frame */
+.menu-frame {
+    background-image: url("Resources/Menu Frame.png");
+    background-size: 100% 100%;
+    background-position: center 30%;
+    width: 90%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-frame ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-frame li {
+    margin: 145px 0;
+}
+
+.menu-frame a {
+    color: white;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: 550;
+    font-family: 'Cardo', Arial, sans-serif;
+}

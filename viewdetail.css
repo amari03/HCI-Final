@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Inter, sans-serif;
+    background-color: #F8F4F1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top to avoid excess white space */
+    min-height: 100vh;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Order Container */
+.order-container {
+    background-color: white;
+    padding: 0 16px;
+    width: 100%;
+    max-width: 400px; /* Keep container within a maximum size */
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    background-color: #6D4426;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.header .header-content {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.back-button, .menu-button {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Order Items */
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-item .item-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order-item span {
+    font-size: 16px;
+    color: #333;
+}
+
+.order-item .price {
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5D4037;
+}
+
+.order-item .actions {
+    display: flex;
+    gap: 12px;
+}
+
+.order-item button {
+    padding: 8px 12px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.remove-btn {
+    color: #6D4426;
+    border-color: #6D4426;
+}
+
+/* Order Notes */
+.order-notes {
+    margin-top: 24px;
+    padding: 0;
+}
+
+/* Style for "Add Order Notes" text */
+.order-notes-text {
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #524434;
+}
+
+.order-notes textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* Subtotal */
+.subtotal {
+    margin-top: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5D4037;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subtotal-text {
+    margin-right: 12px; /* Adds space between "Subtotal:" and the price */
+}
+
+.subtotal-price {
+    font-weight: bold; /* Optional: makes the price bold */
+}
+
+/* Actions Container */
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.undo-btn {
+    background-color: #6D4426;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-grow: 1;
+    margin-right: 12px;
+}
+
+.checkout {
+    background-color: #6D4426;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-grow: 1;
+}

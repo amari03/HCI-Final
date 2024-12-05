@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuisine & Champagne Catering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home_style.css">
+</head>
+<body>
+  <header>
+    <div class="menu-bar">
+      <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
+    </div>
+    <div class="header-content">
+      <img src="Resources/Company Name.png" alt="Company Name Logo" class="header-icon">
+    </div>
+  </header>
+
+  <main>
+    <div class="tagline-container">
+      <p class="tagline-line">From Gourmet Plates to</p>
+      <p class="tagline-line">Sparkling Celebrations, We Make</p>
+      <p class="tagline-line">It Happen.</p>
+    </div>
+    <img src="Resources/Knife & Fork Logo.png" alt="Knife & Fork Logo" class="decor-icon">
+    <button class="cta-button" onclick="location.href='menu.html'">LET'S PARTY</button>
+  </main>
+
+  <script>
+    function goToMainMenu() {
+        window.location.href = 'mainmenu.html';
+    }
+  </script>
+</body>
+</html>

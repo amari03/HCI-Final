@@ -1,0 +1,210 @@
+[
+    {
+      "name": "Chicken Fried Taquitos",
+      "price": 10.20,
+      "description": "One Dozen",
+      "image": "/images/chicken_tacos.jpeg",
+      "protein": "chicken",
+      "mealType": "appetizers"
+    },
+    {
+        "name": "Chicken Puffs",
+        "price": 17.00,
+        "description": "One Dozen",
+        "image": "/images/image_1.png",
+        "protein": "chicken",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Chicken Meat Balls",
+        "price": 18.00,
+        "description": "One Dozen",
+        "image": "/images/meatballs.jpg",
+        "protein": "chicken",
+        "mealType": "appetizers"
+    },
+    {
+      "name": "Spicy Chicken Wings",
+      "price": 12.50,
+      "description": "8 Pieces",
+      "image": "/images/wings.jpg",
+      "protein": "chicken",
+      "mealType": "lunch"
+    },
+    {
+        "name": "Rice and Beans",
+        "price": 15.20,
+        "description": "Baked Chicken, mashed potato and Plantain",
+        "image": "/images/rice-n-beans.jpg",
+        "protein": "chicken",
+        "mealType": "lunch"
+    },
+    {
+        "name": "Chicken Fajitas",
+        "price": 10.20,
+        "description": "One Portion",
+        "image": "/images/fajitas.jpg",
+        "protein": "chicken",
+        "mealType": "lunch"
+    },
+    {
+        "name": "Meat Balls",
+        "price": 10.20,
+        "description": "One Dozen, Swedish, Sweet n Sour",
+        "image": "/images/meatballs.jpg",
+        "protein": "beef",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Finger Sandwiches",
+        "price": 18.00,
+        "description": "One Dozen",
+        "image": "/images/beef-sandwiches.jpg",
+        "protein": "beef",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Tenderloin and Bacon Bites",
+        "price": 25.00,
+        "description": "One Dozen",
+        "image": "/images/tenderloin-bites.jpg",
+        "protein": "beef",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Beef Tacos",
+        "mealType": "lunch",
+        "protein": "beef",
+        "price": 2.50,
+        "description": "1 Soft tacos filled with beef.",
+        "image": "/images/beef-tacos.jpg"
+    },
+    {
+        "name": "Burgundy Beef stew",
+        "price": 17.20,
+        "description": "with white rice and tossed salad",
+        "image": "/images/stew.jpg",
+        "protein": "beef",
+        "mealType": "lunch"
+    },
+    {
+        "name": "Meat Loaf",
+        "price": 18.00,
+        "description": "with mashed potatoes, rolls",
+        "image": "/images/meatloaf.jpg",
+        "protein": "beef",
+        "mealType": "lunch"
+    },
+    {
+        "name": "Mini Sausage Rolls",
+        "price": 13.20,
+        "description": "One Dozen",
+        "image": "/images/sausagerolls.jpg",
+        "protein": "pork",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Crispy Pork Wontons",
+        "price": 20.20,
+        "description": "One Dozen, sweet n sour sauce",
+        "image": "/images/wontons.jpg",
+        "protein": "pork",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Glazed Bacon Wrapped Smokies",
+        "price": 18.00,
+        "description": "One Dozen",
+        "image": "/images/smokies.jpg",
+        "protein": "pork",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Rice and Beans",
+        "price": 15.20,
+        "description": "Baked pork ribs, potato Salad and Plantain",
+        "image": "/images/pork-rice-and-beans.jpg",
+        "protein": "pork",
+        "mealType": "lunch"
+    },
+    {
+        "name": "BBQ",
+        "price": 15.75,
+        "description": "Baked beans, colesaw and dinner rolls",
+        "image": "/images/bbq.jpg",
+        "protein": "pork",
+        "mealType": "lunch"
+    },
+    {
+        "name": "PiBill",
+        "price": 10.00,
+        "description": "Pico de Gallo, pepper sauce and corn tortilla",
+        "image": "/images/pibill.jpg",
+        "protein": "pork",
+        "mealType": "lunch"
+    },
+    {
+        "name": "Chaya Tamales",
+        "price": 3.00,
+        "description": "One Portion",
+        "image": "/images/tamales.jpg",
+        "protein": "vegetarian",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Flaky Spinach Patties",
+        "price": 20.20,
+        "description": "One Dozen",
+        "image": "/images/spinach.jpg",
+        "protein": "vegetarian",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Stuffed Jalapenos",
+        "price": 20.20,
+        "description": "One Dozen, Spinach and Cream Cheese",
+        "image": "/images/jalapenos.jpg",
+        "protein": "vegetarian",
+        "mealType": "appetizers"
+    },
+    {
+        "name": "Vegetable Spring Rolls",
+        "price": 26.00,
+        "description": "One Dozen, with Thai Dipping Sauce",
+        "image": "/images/springroll.jpg",
+        "protein": "vegetarian",
+        "mealType": "lunch"
+    },
+    {
+        "name": "Crispy Vegetabale Wontons",
+        "price": 20.20,
+        "description": "One Dozen, with Sweet n Sour Sauce",
+        "image": "/images/wontons.jpg",
+        "protein": "vegetarian",
+        "mealType": "lunch"
+    },
+    {
+      "name": "Chocolate Cake",
+      "price": 5.50,
+      "description": "One Portion",
+      "image": "/images/choco-cake.jpg",
+      "mealType": "dessert",
+      "protein": "chicken"
+    },
+    {
+        "name": "Cherry Chesse Cake",
+        "price": 6.00,
+        "description": "One Portion",
+        "image": "/images/cheesecake.jpg",
+        "protein": "chicken",
+        "mealType": "dessert"
+    },
+    {
+        "name": "Mini Apple Pie",
+        "price": 3.20,
+        "description": "One Portion",
+        "image": "/images/apple.jpg",
+        "protein": "chicken",
+        "mealType": "dessert"
+    }
+]
