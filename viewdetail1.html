@@ -18,14 +18,18 @@
                 <button class="menu-toggle" onclick="goToMainMenu()">☰</button>
             </div>
         </div>
-
+        
         <!-- Order Items -->
         <div class="order-item">
             <div class="item-details">
                 <span>3 Chicken Fried Taquitos</span>
                 <div class="actions">
                     <button>Edit</button>
+<<<<<<< HEAD
+                    <button class="remove-btn">Remove</button>
+=======
                     <button class="remove" onclick="goRemove()">Remove</button>
+>>>>>>> 79b52166cd331ab3e6c52962eccaa16e4e03f568
                 </div>
             </div>
             <span class="price">BZD 55.85</span>
@@ -35,7 +39,7 @@
                 <span>2 Meat Balls</span>
                 <div class="actions">
                     <button>Edit</button>
-                    <button>Remove</button>
+                    <button class="remove-btn">Remove</button>
                 </div>
             </div>
             <span class="price">BZD 15.70</span>
@@ -45,7 +49,7 @@
                 <span>10 Chicken Puffs</span>
                 <div class="actions">
                     <button>Edit</button>
-                    <button>Remove</button>
+                    <button class="remove-btn">Remove</button>
                 </div>
             </div>
             <span class="price">BZD 28.50</span>
@@ -55,39 +59,47 @@
                 <span>4 Lasagna</span>
                 <div class="actions">
                     <button>Edit</button>
-                    <button>Remove</button>
+                    <button class="remove-btn">Remove</button>
                 </div>
             </div>
             <span class="price">BZD 52.30</span>
         </div>
-
+        
         <!-- Add Order Notes Section -->
         <div class="order-notes">
             <p class="order-notes-text">Add Order Notes:</p>
             <textarea placeholder="e.g., Please call upon arrival"></textarea>
         </div>
-
+        
         <!-- Subtotal and Checkout -->
         <div class="subtotal">
-                <span class="subtotal-text">Subtotal:</span>
-                <span class="subtotal-price">BZD 148.35</span>
+            <span class="subtotal-text">Subtotal:</span>
+            <span class="subtotal-price">BZD 148.35</span>
         </div>
-        <button class="checkout">Checkout</button>
+        <div class="actions-container">
+            <button class="undo-btn">Undo</button>
+            <button class="checkout">Checkout</button>
+        </div>
     </div>
-
+    
+    <script src="order-management.js"></script>
     <script>
         // This function will take you to history.html when called
         function goBack() {
             window.location.href = 'history.html'; // Navigate to history page
         }
-    
+        
         // The hamburger menu toggle function (for reference, if needed)
         function goToMainMenu() {
             window.location.href = 'mainmenu.html'; // Navigate to the main menu page
         }
+<<<<<<< HEAD
+    </script>
+=======
         function goRemove(){
             window.location.href = 'viewdetail2.html';
         }
     </script> 
+>>>>>>> 79b52166cd331ab3e6c52962eccaa16e4e03f568
 </body>
 </html>
