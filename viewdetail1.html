@@ -22,13 +22,13 @@
         <!-- Order Items -->
         <div class="order-item">
             <div class="item-details">
-                <span>21 Chicken Fried Taquitos</span>
+                <span>3 Chicken Fried Taquitos</span>
                 <div class="actions">
                     <button>Edit</button>
-                    <button>Remove</button>
+                    <button class="remove" onclick="goRemove()">Remove</button>
                 </div>
             </div>
-            <span class="price">BZD 59.85</span>
+            <span class="price">BZD 55.85</span>
         </div>
         <div class="order-item">
             <div class="item-details">
@@ -38,7 +38,7 @@
                     <button>Remove</button>
                 </div>
             </div>
-            <span class="price">BZD 5.70</span>
+            <span class="price">BZD 15.70</span>
         </div>
         <div class="order-item">
             <div class="item-details">
@@ -52,7 +52,7 @@
         </div>
         <div class="order-item">
             <div class="item-details">
-                <span>14 Lasagna</span>
+                <span>4 Lasagna</span>
                 <div class="actions">
                     <button>Edit</button>
                     <button>Remove</button>
@@ -84,6 +84,9 @@
         // The hamburger menu toggle function (for reference, if needed)
         function goToMainMenu() {
             window.location.href = 'mainmenu.html'; // Navigate to the main menu page
+        }
+        function goRemove(){
+            window.location.href = 'viewdetail2.html';
         }
     </script> 
 </body>
